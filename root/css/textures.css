@@ -1,0 +1,35 @@
+/* textures from subtlepatterns.com */
+.honeyTexture{
+	background-image: url("../img/honey_im_subtle/honey_im_subtle.png"); 
+}
+
+.creamTexture{
+	background-image: url("../img/cream_pixels/cream_pixels.png"); 
+}
+
+.escherTexture{
+	background-image: url("../img/escheresque/escheresque.png"); 
+}
+.hexellenceTexture{
+	background-image: url("../img/hexellence/hexellence.png"); 
+}
+.graphyTexture{
+	background-image: url("../img/graphy/graphy.png"); 
+}
+.bullseyeTexture{
+	background-image: url("../img/strange_bullseyes/strange_bullseyes.png"); 
+}
+.carbon_fibreTexture{
+	background-image: url("../img/carbon_fibre/carbon_fibre.png"); 
+}
+
+.carbon_fibre_v2Texture{
+	background-image: url("../img/carbon_fibre_v2/carbon_fibre_v2.png"); 
+}
+.tweedTexture{
+	background-image: url("../img/tweed/tweed.png"); 
+}
+.dark_fish_skinTexture{
+	background-image: url("../img/dark_fish_skin/dark_fish_skin.png"); 
+}
+

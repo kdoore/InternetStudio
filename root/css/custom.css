@@ -1,0 +1,52 @@
+body {
+  font-family: 'Arimo', sans-serif;
+  color: #5E6C78;
+}
+.paddingBottom{
+padding-bottom: 10px;
+}
+a{
+color: #8D936B;
+}
+.topContent{
+padding-top: 50px;
+}
+.topMargin{
+padding-top: 15px;
+}
+
+
+.escherTexture{
+	background-image: url("../img/escheresque/escheresque.png"); 
+}
+
+.jumbotron{
+	padding-bottom: 10px;
+}
+
+.dustyGreen{
+	background-color: rgba(206, 215, 158, 0.89)
+	
+}
+.well{
+border: 1px solid rgba(153, 156, 198, 0.35);
+background-color: rgba(116, 116, 118, 0.06)
+}
+.dustyBlue{
+	background-color: rgba(177, 179, 213, 0.4);
+}
+.white{
+	background-color: rgba(255, 255, 255, 0.40);
+}
+.shadow{
+	padding: 0px;
+	
+   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.21);
+	-webkit-box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.21);
+}
+h1,h2,h3,h4,h5,h6{
+  	font-family: 'Amaranth', sans-serif;
+}
+.list-group-item{
+	background-color: rgba(190, 190, 189, 0.14);
+}
