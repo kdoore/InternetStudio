@@ -1,52 +1,103 @@
+/*-----------Styling applied to elements-------------------------------- */
+
 body {
   font-family: 'Arimo', sans-serif;
-  color: #5E6C78;
-}
-.paddingBottom{
-padding-bottom: 10px;
+  color: #4D5870;
+  margin-top: 5px;
+  /*   color: #5E6C78;  */
 }
 a{
-color: #8D936B;
-}
-.topContent{
-padding-top: 50px;
-}
-.topMargin{
-padding-top: 15px;
+	color: #85991A;
 }
 
-
-.escherTexture{
-	background-image: url("../img/escheresque/escheresque.png"); 
+h1,h2,h3,h4,h5,h6{
+  	font-family: 'Amaranth', sans-serif;
+}
+footer {
+	margin: 40px 0;
+}
+.navbar-inverse .navbar-brand ,.navbar-inverse .navbar-nav > li > a{
+	color: #A8BA4E;
+}
+.navbar{
+  border-bottom: 6px  solid rgba(109, 107, 107, 0.35);
 }
 
-.jumbotron{
-	padding-bottom: 10px;
-}
+/*-----------Styling applied to bootstrap components---------------------- */
 
-.dustyGreen{
-	background-color: rgba(206, 215, 158, 0.89)
-	
-}
 .well{
 border: 1px solid rgba(153, 156, 198, 0.35);
 background-color: rgba(116, 116, 118, 0.06)
+}
+
+.list-group-item{
+	background-color: rgba(190, 190, 189, 0.14);
+}
+.glyphicon{
+color: rgba(184, 203, 84, 0.82);
+top: 5px;
+}
+
+
+/*-----------Styling applied for additional margins or padding------------ */
+
+#panel-thumbnails{
+	margin-top: 30px;
+}
+.paddingBottom{
+	padding-bottom: 10px;
+}
+
+.topContent{
+	padding-top: 50px;
+}
+
+.topMargin{
+	padding-top: 15px;
+}
+.text-thumbnail{
+	margin-left: 27px;
+}
+.text-Arimo{
+	font-family: 'Arimo', sans-serif;
+}
+.list-item-last{
+	padding-bottom: 50px;
+}
+
+
+
+/*-----------Colors-------------------------------------------------------- */
+
+.dustyGreen{
+	/*   background-color: rgba(191, 203, 128, 0.89); */
+	
+	background: url("../img/bg-texture.png") 0 0 repeat;
+	background-color: rgba(197, 232, 48, 0.58)
 }
 .dustyBlue{
 	background-color: rgba(177, 179, 213, 0.4);
 }
 .white{
-	background-color: rgba(255, 255, 255, 0.40);
+	background-color: rgba(255, 255, 255, 0.52);
 }
+
+#style-header{
+color: #D6D7C1;
+}
+
+
+/*-----------Styling applied to create background style-------------------- */
+
+
 .shadow{
 	padding: 0px;
 	
-   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.21);
-	-webkit-box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.21);
+   	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.21);
+	-webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.21);
 }
-h1,h2,h3,h4,h5,h6{
-  	font-family: 'Amaranth', sans-serif;
-}
-.list-group-item{
-	background-color: rgba(190, 190, 189, 0.14);
+
+.escherTexture{
+	background-image: url("../img/escheresque/escheresque.png");
+	background-attachment: fixed; 
 }

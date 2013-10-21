@@ -1,0 +1,28 @@
+body {
+  font-family: 'Arimo', sans-serif;
+  color: #4D5870;
+  margin-top: 60px;
+  background-image: url("../img/graphy/graphy.png");
+  background-attachment: fixed;
+}
+a{
+	color: #8D936B;
+}
+h1,h2,h3,h4,h5,h6{
+  	font-family: 'Amaranth', sans-serif;
+}
+.thumbnail{
+	background: rgba(174, 187, 200, 0.51);
+}
+.well{
+	background: rgba(199, 219, 230, 0.21);
+	border: 1px solid rgba(109, 107, 107, 0.36);
+}
+.carbon-texture{
+	background-image: url("../img/carbon_fibre/carbon_fibre.png"); 
+}
+
+.graphy-texture{
+	background-image: url("../img/graphy/graphy.png"); 
+	opacity: .3;
+}

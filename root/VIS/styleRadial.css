@@ -1,0 +1,147 @@
+
+
+html {
+    min-width: 1000px;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,sans-serif;
+    margin: 1em auto 4em;
+    position: relative;
+    width: 1000px;
+   
+}
+h1 {
+    font-size: 24px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0.3em 0 0.1em;
+   
+}
+h2 {
+    margin-top: 2em;
+}
+h1, h2 {
+    text-rendering: optimizelegibility;
+}
+h2 a {
+    color: #CCCCCC;
+    left: -20px;
+    position: absolute;
+    width: 740px;
+}
+footer {
+    font-size: small;
+    margin-top: 8em;
+}
+header aside {
+    margin-top: 0px;
+}
+header aside, footer aside {
+    color: #636363;
+    text-align: right;
+}
+.asideleft {
+    color: #636363;
+    text-align: left;
+    margin-top: 0px;
+    font-size: small;
+    position: absolute;
+    width: 180px;
+}
+aside {
+    font-size: small;
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+.attribution {
+    font-size: small;
+    margin-bottom: 2em;
+}
+body > p, li > p {
+    line-height: 1.5em;
+}
+body > p {
+    width: 720px;
+}
+
+li {
+    width: 680px;
+}
+a {
+    color: #636363;
+}
+a:not(:hover) {
+    text-decoration: none;
+}
+pre, code, textarea {
+    font-family: "Menlo",monospace;
+}
+code {
+    line-height: 1em;
+}
+textarea {
+    font-size: 100%;
+}
+body > pre {
+    border-left: 2px solid #CCCCCC;
+    margin: 2em 0 2em -20px;
+    padding-left: 18px;
+}
+.html .value, .javascript .string, .javascript .regexp {
+    color: #756BB1;
+}
+.html .tag, .css .tag, .javascript .keyword {
+    color: #3182BD;
+}
+.comment {
+    color: #636363;
+}
+.html .doctype, .javascript .number {
+    color: #31A354;
+}
+.html .attribute, .css .attribute, .javascript .class, .javascript .special {
+    color: #E6550D;
+}
+svg {
+
+    font: 9px sans-serif;
+    
+}
+.axis path, .axis line {
+    fill: none;
+    shape-rendering: crispedges;
+    stroke: #000000;
+}
+sup, sub {
+    line-height: 0;
+}
+q:before, blockquote:before {
+    content: "“";
+}
+q:after, blockquote:after {
+    content: "”";
+}
+blockquote:before {
+    left: 2em;
+    position: absolute;
+}
+blockquote:after {
+    position: absolute;
+}
+.circle circle {
+    fill: none;
+    pointer-events: all;
+}
+.group path {
+    fill-opacity: 0.5;
+}
+path.chord {
+    stroke: #ffffff;
+    stroke-width: 2px;
+    fill-opacity: 0.30;
+    stroke-opacity: .65;
+}
+.circle:hover path.fade {
+    display: none;
+}

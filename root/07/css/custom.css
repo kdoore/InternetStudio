@@ -1,0 +1,35 @@
+
+.navbar{
+  border-bottom: 6px  solid rgba(109, 107, 107, 0.35);
+}
+
+.jumbotron-carousel{
+  
+  margin-top: 0px ;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #000;
+  max-height: 410px;
+  border-bottom: 6px solid rgba(78, 77, 77, 0.92);
+  border-top: 6px solid rgba(78, 77, 77, 0.92);
+}
+.carousel-img{
+  max-height: 392px;
+  margin: auto;
+}
+.carousel-inner{
+  margin: auto;
+}
+.carousel-header{
+ border-top: 6px solid rgba(78, 77, 77, 0.92); 
+}
+
+.site-footer{
+  background: #000;
+  padding-top: 20px;
+}
+.site-footer-content{
+  padding-left: 50px;
+  
+}
+

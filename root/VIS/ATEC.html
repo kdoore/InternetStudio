@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ATEC TOPIC MAP</title>
+<script src="http://d3js.org/d3.v2.min.js?2.9.3"></script>
+    <link href="styleRadial.css" rel="stylesheet">
+<style>
+
+.link {
+ stroke: #ffffff;
+stroke-dasharray: 1, 1;
+ stroke-width: 2px;
+}
+.type2.link, .type1.link, .type0.link{
+stroke: rgba(186, 157, 107, 0.31);
+stroke-dasharray: 1, 1;
+}
+
+.type3.link {
+stroke: rgba(42, 169, 26, 0.31);
+stroke-dasharray: 1, 1;
+}
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+text.shadow {
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-opacity: .8;
+}
+
+
+</style>
+<header>
+<div id="title"><h1>ATEC Topic Map</h1></div>
+
+</header>
+<body>
+
+<script>
+
+var width = 800,
+    height = 600
+
+//var color = d3.scale.category20();
+//#F7AB07
+
+var color = d3.scale.linear()
+    .domain([ 0,1, 2,3])
+    .range(["yellow", "blue", "green","orange"]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var force = d3.layout.force()
+    .gravity(.09)
+    .linkDistance(function(d) { return (d.length) * 10})
+    .charge(-320)
+    .friction(.9)
+    .size([width, height]);
+
+d3.json("UTD_Majors2.json", function(json) {
+  force
+      .nodes(json.nodes)
+      .links(json.links)
+      .start();
+
+  var links = svg.selectAll(".link")
+      .data(json.links)
+      .enter().append("line")
+      .attr("class", function(d){ return "link type"+d.source.group});
+
+    
+    
+
+  var node = svg.selectAll(".node")
+      .data(json.nodes)
+      .enter().append("g")
+      .attr("class", "node")
+      .call(force.drag);
+  node.append("g")
+
+  /*node.append("image")
+      .attr("xlink:href", function(d) {return d.icon;})
+      .attr("x", -50)
+      .attr("y", -50)
+      .attr("width", 100)
+      .attr("height", 100);
+*/
+
+  node.append("svg:circle")
+      .attr("r",  function(d) { return((d.group+2)*4); })
+      .style("fill", function(d) { return color((d.group)); })
+      .style("stroke", function(d) { return color((d.group)); })
+      .style("fill-opacity", 0.3)
+      .style("stroke-opacity", 0.4)
+
+  node.append("text")
+      //.attr("dx", -12)
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      //.attr("class","shadow")
+      .text(function(d) { return d.name });
+
+  force.on("tick", function() {
+    links.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+  });
+});
+
+
+
+</script>
